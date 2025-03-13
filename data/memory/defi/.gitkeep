@@ -1,0 +1,3 @@
+# Data Directory
+This directory is used for persistent storage of DeFi context data by the ANUS-DREAMS Bridge.
+Do not delete this directory or modify files directly unless you know what you're doing.
