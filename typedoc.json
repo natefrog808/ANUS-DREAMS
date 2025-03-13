@@ -1,0 +1,23 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name": "ANUS-DREAMS Bridge API Documentation",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeExternals": true,
+  "readme": "README.md",
+  "plugin": ["typedoc-plugin-markdown"],
+  "theme": "default",
+  "hideGenerator": true,
+  "githubPages": true,
+  "gitRevision": "main",
+  "categoryOrder": [
+    "Core",
+    "Contexts",
+    "Actions",
+    "Adapters",
+    "Utils",
+    "Examples",
+    "*"
+  ]
+}
