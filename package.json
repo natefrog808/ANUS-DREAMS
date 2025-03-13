@@ -1,0 +1,64 @@
+{
+  "name": "anus-dreams-bridge",
+  "version": "0.1.0",
+  "description": "Integration bridge between ANUS AI and Daydreams frameworks for Web3 agent development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "dev": "tsc --watch",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "test": "jest",
+    "prepare": "npm run clean && npm run build",
+    "agent:crosschain": "ts-node src/examples/crosschain-analyst.ts",
+    "agent:defi": "ts-node src/examples/defi-manager.ts",
+    "agent:nft": "ts-node src/examples/nft-analyzer.ts",
+    "example": "ts-node src/examples/index.ts"
+  },
+  "keywords": [
+    "ai",
+    "blockchain",
+    "web3",
+    "agents",
+    "daydreams",
+    "anus-ai",
+    "defi",
+    "nft",
+    "ethereum"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/anus-dreams-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/anus-dreams-bridge/issues"
+  },
+  "homepage": "https://github.com/yourusername/anus-dreams-bridge#readme",
+  "dependencies": {
+    "@daydreamsai/core": "^0.8.0",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.6.2",
+    "@types/uuid": "^9.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@daydreamsai/core": "^0.8.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
