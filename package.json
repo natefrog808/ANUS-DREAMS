@@ -5,17 +5,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "clean": "rimraf dist",
-    "dev": "tsc --watch",
-    "lint": "eslint 'src/**/*.{js,ts}'",
-    "test": "jest",
-    "prepare": "npm run clean && npm run build",
-    "agent:crosschain": "ts-node src/examples/crosschain-analyst.ts",
-    "agent:defi": "ts-node src/examples/defi-manager.ts",
-    "agent:nft": "ts-node src/examples/nft-analyzer.ts",
-    "example": "ts-node src/examples/index.ts"
-  },
+  "start": "nps",
+  "test": "nps test",
+  "build": "nps build",
+  "docs": "nps docs"
+}
   "keywords": [
     "ai",
     "blockchain",
