@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+lib/
+out/
+
+# Test coverage
+coverage/
+
+# Data files (will be mounted as a volume)
+data/*
+!data/README.md
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Git files
+.git/
+.gitignore
+
+# Docs
+docs/
+
+# Test files
+tests/
