@@ -4,7 +4,6 @@
   "description": "Integration bridge between ANUS AI and Daydreams frameworks for Web3 agent development",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  {
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",
@@ -22,7 +21,6 @@
     "prestart": "npm run setup",
     "start": "ts-node src/examples/index.ts"
   }
-}
   "keywords": [
     "ai",
     "blockchain",
