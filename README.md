@@ -25,6 +25,43 @@ The bridge works by mapping ANUS AI tools to Daydreams actions and creating cont
 │           │◀─────────│               │◀──────────│          │
 └───────────┘          └───────────────┘           └──────────┘
 ```
+~~~
+anus-dreams-bridge/
+├── .github/
+│   └── workflows/         # GitHub Actions workflows
+├── data/
+│   ├── memory/            # Persistent memory storage
+│   │   ├── blockchain/    # Blockchain context data
+│   │   ├── wallet/        # Wallet context data
+│   │   ├── defi/          # DeFi context data
+│   │   ├── nft/           # NFT context data
+│   │   └── crosschain/    # Cross-chain analysis data
+│   ├── .gitignore         # Ignore data files but keep structure
+│   └── README.md          # Documentation for data directory
+├── docs/                  # Generated documentation
+├── scripts/
+│   └── setup-data-directory.js  # Script to set up data directories
+├── src/
+│   ├── examples/          # Example agents
+│   ├── utils/             # Utility functions
+│   └── index.ts           # Main bridge implementation
+├── tests/                 # Test files
+├── .dockerignore          # Docker ignore file
+├── .env.template          # Environment variables template
+├── .eslintrc.js           # ESLint configuration
+├── .gitignore             # Git ignore file
+├── CODE_OF_CONDUCT.md     # Code of conduct
+├── CONTRIBUTING.md        # Contribution guidelines
+├── docker-compose.yml     # Docker Compose configuration
+├── Dockerfile             # Docker build instructions
+├── jest.config.js         # Jest test configuration
+├── LICENSE                # MIT license
+├── Makefile               # Make commands
+├── package.json           # Project configuration
+├── README.md              # Project documentation
+├── tsconfig.json          # TypeScript configuration
+└── typedoc.json           # TypeDoc configuration
+~~~
 
 ### Key Components
 
